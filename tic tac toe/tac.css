@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+nav ul{
+    list-style-type: none ;
+
+
+
+
+}
+nav{
+    background-color: rgb(37, 4, 36);
+    height: 60px;
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 30px;
+   padding: 0 20px ;
+    font-family: "Roboto Slab", serif;
+
+    
+
+     
+}
+.content {
+
+    display: grid;
+    grid-template-columns: repeat(3 ,13vw);
+    grid-template-rows: repeat(3 , 13vw);
+    font-family: "Roboto Slab", serif; 
+    position: relative;
+   
+}
+.gamecontainer{
+    background-color: rgb(182, 243, 235);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.content div{
+    border: 2px solid black;
+    font-size: 5vw ;
+    display: flex ;
+    
+justify-content: center;
+align-items: center;
+}
+
+img{
+    height:25vw;
+   width: 0;
+   transition: width 0.5s ease-in-out;
+}
+
+
+.box:hover{
+    background-color: rgb(242, 255, 127);
+    border: none;
+}
+.info{
+    padding: 0 34px;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+     font-size: 50px;
+     color:black;
+     transition: color 0.5s;
+}
+
+
+
+
+
+.br-0 {
+    border-right: 0 !important;
+
+}
+
+.bl-0 {
+    border-left: 0 !important;
+}
+
+.bt-0 {
+    border-top: 0 !important;
+}
+.bb-0 {
+    border-bottom: 0 !important;
+}
+.boxtext{
+    color: rgb(14, 21, 121);
+}
+#reset{
+height: 70px ;
+width: 130px;
+font-size: 30px;
+font-family: "Roboto Slab", serif;
+font-weight: bolder;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+background-color: rgba(251, 255, 0, 0.13);
+color: rgb(25, 25, 26);
+border-radius: 30px;
+
+
+}
+@media screen and (max-width:600px)
+{
+    .gamecontainer{
+        flex-wrap: wrap;
+    
+    }
+    .info{
+      margin-top: 35px;
+    }
+
+}
+  
+
+#reset:hover{
+    font-size: 3rem;
+    border: 4rem;
+    size: 5rem;
+}
+
+.line{
+height: 0.7vw;
+width: 0;
+position: absolute;
+background-color: rgb(251, 255, 0);
+border-radius: 50px;
+transition: width 1s ease-in-out;
+   
+} 
